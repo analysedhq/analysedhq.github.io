@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysed · Data, explained.</title>
+<meta name="description" content="Singapore and Southeast Asia, explained with data. Watch Analysed on YouTube, TikTok, Instagram and Facebook.">
+<meta property="og:title" content="Analysed · Data, explained.">
+<meta property="og:description" content="Singapore and Southeast Asia, explained with data.">
+<meta property="og:image" content="img/ep02.jpg">
+<meta name="theme-color" content="#F4F0E8">
+<link rel="icon" href="img/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,600;6..72,700&display=swap" rel="stylesheet">
+<style>
+  /* Brand kit tokens (brand/kit/tokens.json): paper, ink, one red mark. */
+  :root {
+    --paper: #F4F0E8; --surface: #FBF9F4; --ink: #1A1916; --mark: #E0522F;
+    --muted: #6E6A62; --rule: #CFC8BB;
+    --serif: "Newsreader", Georgia, serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); }
+  body { font-family: var(--serif); -webkit-font-smoothing: antialiased; }
+  main { max-width: 460px; margin: 0 auto; padding: 48px 16px 40px; }
+
+  header { text-align: center; }
+  .avatar { width: 88px; height: 88px; border-radius: 50%; display: block; margin: 0 auto 18px; }
+  .wordmark { font-weight: 600; font-size: 44px; letter-spacing: -0.02em; line-height: 1; margin: 0; }
+  .wordmark .m { position: relative; display: inline-block; }
+  .wordmark .m::after { /* the one red mark, under "sed" */
+    content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 8px; background: var(--mark);
+    transform-origin: left; animation: draw .45s var(--ease) .15s both;
+  }
+  @keyframes draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .rule { width: 180px; height: 1px; background: var(--ink); margin: 20px auto 12px; }
+  .tagline { font-family: var(--mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; margin: 0; }
+  .bio { font-size: 18px; line-height: 1.4; color: var(--ink); margin: 18px auto 0; max-width: 340px; font-weight: 600; }
+
+  .kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 36px 0 12px; }
+
+  .video { display: block; text-decoration: none; color: inherit; background: var(--surface); border: 1px solid var(--rule); margin-bottom: 14px; transition: transform .25s var(--ease), border-color .25s var(--ease); }
+  .video:hover, .video:focus-visible { transform: translateY(-2px); border-color: var(--ink); outline: none; }
+  .video img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #E6E0D4; }
+  .video .meta { padding: 12px 14px 14px; }
+  .video .label { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .video .title { font-size: 20px; line-height: 1.2; letter-spacing: -0.01em; margin-top: 4px; }
+
+  .links { display: grid; gap: 10px; }
+  .link { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 18px; border: 1px solid var(--ink); text-decoration: none; color: var(--ink); background: transparent; transition: background .25s var(--ease), color .25s var(--ease); }
+  .link:hover, .link:focus-visible { background: var(--ink); color: var(--paper); outline: none; }
+  .link .name { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; }
+  .link .handle { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; white-space: nowrap; }
+  .link .what { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; opacity: .7; margin-top: 2px; font-weight: 400; }
+
+  footer { text-align: center; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-top: 40px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="avatar" src="img/avatar.png" alt="Analysed logo" width="88" height="88">
+    <h1 class="wordmark">Analy<span class="m">sed</span></h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="tagline">Data, explained.</p>
+    <p class="bio">Singapore and Southeast Asia, explained with data.</p>
+  </header>
+
+  <p class="kicker">Latest explainer</p>
+  <a class="video" href="https://youtu.be/5LRAAgbHA5c">
+    <img src="img/ep02.jpg" alt="Why is Singapore hazy? thumbnail" loading="eager">
+    <div class="meta">
+      <div class="label">EP. 02 · Watch on YouTube</div>
+      <div class="title">Why Is Singapore So Hazy? The Indonesian Fires Behind the Haze</div>
+    </div>
+  </a>
+  <a class="video" href="https://youtu.be/Hboo54oHfe4">
+    <img src="img/ep01.jpg" alt="Why is COE so expensive? thumbnail" loading="lazy">
+    <div class="meta">
+      <div class="label">EP. 01 · Watch on YouTube</div>
+      <div class="title">Why Is COE So Expensive? Singapore's $130,000 Car Permit</div>
+    </div>
+  </a>
+
+  <p class="kicker">Follow Analysed</p>
+  <nav class="links">
+    <a class="link" href="https://www.youtube.com/@AnalysedHQ?sub_confirmation=1"><span><span class="name">YouTube</span><span class="what">Full explainers</span></span><span class="handle">@AnalysedHQ</span></a>
+    <a class="link" href="https://www.tiktok.com/@analysedhq"><span><span class="name">TikTok</span><span class="what">60-second versions</span></span><span class="handle">@analysedhq</span></a>
+    <a class="link" href="https://www.instagram.com/analysed.hq"><span><span class="name">Instagram</span><span class="what">Reels &amp; carousels</span></span><span class="handle">@analysed.hq</span></a>
+    <a class="link" href="https://www.facebook.com/profile.php?id=61595476460856"><span><span class="name">Facebook</span><span class="what">Videos &amp; updates</span></span><span class="handle">Analysed HQ</span></a>
+  </nav>
+
+  <footer>Analysed · Data, explained.</footer>
+</main>
+</body>
+</html>
